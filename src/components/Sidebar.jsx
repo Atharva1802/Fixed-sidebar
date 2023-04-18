@@ -1,13 +1,5 @@
 import React, { useState } from 'react';
-import {
-    FaTh,
-    FaBars,
-    FaUserAlt,
-    FaRegChartBar,
-    FaCommentAlt,
-    FaShoppingBag,
-    FaThList
-}from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
 
@@ -17,40 +9,31 @@ const Sidebar = ({children}) => {
     const menuItem=[
         {
             path:"/",
-            name:"Dashboard",
-            icon:<FaTh/>
+            name:"Home",
+
         },
         {
             path:"/about",
             name:"About",
-            icon:<FaUserAlt/>
+
         },
         {
-            path:"/analytics",
-            name:"Analytics",
-            icon:<FaRegChartBar/>
+            path:"/contact",
+            name:"Contact",
+
         },
         {
-            path:"/comment",
-            name:"Comment",
-            icon:<FaCommentAlt/>
-        },
-        {
-            path:"/product",
-            name:"Product",
-            icon:<FaShoppingBag/>
-        },
-        {
-            path:"/productList",
-            name:"Product List",
-            icon:<FaThList/>
+            path:"/cards",
+            name:"Cards",
+
         }
+        
     ]
     return (
         <div className="container">
            <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
                <div className="top_section">
-                   <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Logo</h1>
+                   <h1 style={{display: isOpen ? "block" : "none"}} className="logo">SideBar</h1>
                    <div style={{marginLeft: isOpen ? "50px" : "0px"}} className="bars">
                        <FaBars onClick={toggle}/>
                    </div>

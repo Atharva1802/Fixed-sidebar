@@ -1,0 +1,33 @@
+.card {
+    background-color: #dca080c4;
+    border: 1px solid #fefefe;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #161616, -20px -20px 20px #161616;
+    padding: 1rem;
+    max-width: 300px;
+}
+
+
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.gridContainer {
+    display: grid !important;
+    width: 300px;
+    height: 75px;
+    padding-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    row-gap: 50px;
+    column-gap: 50px;
+    justify-items: center;
+    margin-left: 280px;
+}

@@ -11,11 +11,12 @@ main{
     padding: 20px;
 }
 .sidebar{
-    background: #000;
-    color: #fff;
+    background: #b08989;
+    color: #000000;
     height: 100vh;
     width: 200px;
     transition: all 0.5s;
+    position: fixed;
 }
 .top_section{
     display: flex;
@@ -32,18 +33,18 @@ main{
 }
 .link{
     display: flex;
-    color: #fff;
+    color: #010101;
     padding: 10px 15px;
     gap: 15px;
     transition: all 0.5s;
 }
 .link:hover{
-    background:lightskyblue;
+    background:rgb(141, 83, 60);
     color: #000;
     transition: all 0.5s;
 }
 .active{
-    background: lightskyblue;
+    background: rgba(115, 105, 105, 0.613);
     color: #000;
 }
 .icon, .link_text{
